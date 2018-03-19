@@ -1,4 +1,5 @@
-# CRS 4x12 Ortholinear Layout
+# Can't Remember Stuff 4x12 Ortholinear Layout
+by dlaroe /u/deaconblue42
 
 Since I started with a Planck and a 2u space, it's not as optimal on a split or grid but it's what I'm used to using.
 
