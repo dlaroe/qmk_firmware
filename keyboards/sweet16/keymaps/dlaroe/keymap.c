@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [extra] = LAYOUT_numpad_4x4(
         KC_PSLS,   KC_PAST,  KC_PMNS,  KC_TRNS,
-        KC_BSPC,   KC_EXECUTE,  KC_DEL,
+        KC_BSPC,   KC_ESC,  KC_DEL,
         KC_LPRN,   KC_RPRN,  KC_PEQL,  KC_PENT,
              KC_TAB,      KC_NLCK
     ),
