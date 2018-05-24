@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC, \
   KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_4,    KC_5,    KC_6, KC_DOT, KC_ASTR,     \
   _______, KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_1,    KC_2,    KC_3, _______, _______,    \
-  _______, _______, _______, _______, _______,     KC_0,      _______, KC_LBRC, KC_MINS, KC_PLUS, KC_RPRC      \
+  _______, _______, _______, _______, _______,     KC_0,      _______, KC_LBRC, KC_MINS, KC_PLUS, KC_RBRC      \
 ),
 
 /* Raise
@@ -118,7 +118,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | C-A-I|Qwerty|      |      |Reset |Macro0|      |      |      |      |      |C-A-D |
+ * | C-A-I|Qwerty|      |      |Reset |Macro0|FC rst|FC up |FC dn |FC tog |      |C-A-D |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Caps | Arrow|      |Aud on|Audoff|      |AGswap|AGnorm| PrtSc|ScrLck| Break|      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -129,7 +129,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_ADJUST] = LAYOUT_preonic_mit( \
   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-  LALT(LCTL(KC_INS)), QWERTY,   _______, _______, RESET, M(0),  _______, MAGIC_TOGGLE_NKRO, _______, _______, _______, LALT(LCTL(KC_DEL)),
+  LALT(LCTL(KC_INS)), QWERTY,   _______, _______, RESET, M(0),  CK_RST, CK_UP, CK_DOWN, CK_TOGG, MAGIC_TOGGLE_NKRO, LALT(LCTL(KC_DEL)),
   KC_CAPS, ARROW, _______, AU_ON,   AU_OFF,  _______, AG_SWAP, AG_NORM,  KC_PSCR, KC_SLCK, KC_PAUS,  _______,
   _______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  KC_MPRV,  KC_MNXT,  KC_MUTE, KC_VOLD, KC_VOLU, _______, _______,
   BACKLIT, _______, _______, _______, _______,     KC_MPLY,     _______, BL_TOGG, BL_DEC , BL_INC , BL_STEP
